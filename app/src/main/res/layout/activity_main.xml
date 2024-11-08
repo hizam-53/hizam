@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<ImageView
+android:layout_width="250dp"
+android:layout_height="250dp"
+android:layout_alignParentEnd="true"
+android:layout_alignParentBottom="true"
+
+android:layout_marginEnd="80dp"
+android:layout_marginBottom="462dp"
+android:src="@drawable/logo" />
+
+<ImageView
+android:layout_width="match_parent"
+android:layout_height="624dp"
+android:layout_alignParentBottom="true"
+android:layout_marginBottom="-75dp"
+android:src="@drawable/hai" />
+
+<androidx.cardview.widget.CardView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1E3B5D"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fontFamily="cursive"
+        android:text="Hello! Welcome"
+        android:textColor="#EC6738"
+        android:textSize="48sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="“Keep your bike in top condition with personalized
+                maintenance tracking and diagnostics.”"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="150dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        app:backgroundTint="#EC6738"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/button_01"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        app:backgroundTint="@color/cardview_light_background"
+        android:textColor="@color/black"
+        android:text="SignUp" />
+
+
+</LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+    </RelativeLayout>

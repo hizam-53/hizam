@@ -1,0 +1,107 @@
+<!-- res/layout/activity_bike_info_entry.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/dark_blue"> <!-- Light background for contrast -->
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:contentDescription="Bike Icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Motorbike Health Care"
+            android:textSize="24sp"
+            android:textColor="@color/orange"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+    <!-- Content Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Bike Information"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"/>
+
+    <!-- Model Input Field -->
+    <EditText
+        android:id="@+id/et_bike_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bike Model"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Year Input Field -->
+    <EditText
+        android:id="@+id/et_bike_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Year"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="12dp"
+        android:inputType="number"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Mileage Input Field -->
+    <EditText
+        android:id="@+id/et_bike_mileage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mileage (km)"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="12dp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Custom Name Input Field -->
+    <EditText
+        android:id="@+id/et_bike_custom_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Custom Name"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Add Image Button -->
+    <Button
+        android:id="@+id/btn_upload_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Bike Image"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/orange"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btn_save_bike_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Bike Information"
+        android:textColor="@color/white"
+        android:backgroundTint="#1E90FF"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

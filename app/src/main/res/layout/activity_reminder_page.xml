@@ -1,0 +1,103 @@
+<!-- activity_reminder_page.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/reminder_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminders"
+            android:textSize="24sp"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="sans-serif-medium"
+            android:paddingBottom="16dp" />
+
+        <!-- Enable Notification Button -->
+        <Button
+            android:id="@+id/enable_notifications_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Notifications"
+
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/white" />
+
+        <!-- Reminder Items -->
+        <!-- Engine Oil Reminder -->
+        <LinearLayout
+            android:id="@+id/reminder_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reminder_item_background"
+            android:orientation="vertical">
+            <!-- android:padding="16dp"
+            android:layout_marginTop="12dp"> -->
+
+
+        </LinearLayout>
+
+        <!-- Repeat similar blocks for each item, like Car Wash or Other Reminders -->
+        <!-- Car Wash Reminder -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reminder_item_background"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/task_name_car_wash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car Wash"
+                android:textColor="@color/dark_blue"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/due_date_car_wash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1,000 mi (deadline 11/12/2024)"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/remaining_days_car_wash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In 5 days"
+                android:textColor="@color/orange"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Add more reminders as needed here -->
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="-95dp"
+        android:contentDescription="Add Reminder"
+        android:src="@drawable/ic_add" />
+
+</RelativeLayout>

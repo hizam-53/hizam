@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_nav"
+        android:title=""
+        android:icon="@drawable/home"/>
+
+    <item
+        android:id="@+id/maintenance_nav"
+        android:title=""
+        android:icon="@drawable/maintenance"/>
+
+    <item
+        android:id="@+id/reminders_nav"
+        android:title=""
+        android:icon="@drawable/alarm"/>
+
+    <item
+        android:id="@+id/Mechanic_nav"
+        android:title=""
+        android:icon="@drawable/locator"/>
+
+    <item
+        android:id="@+id/Settings_nav"
+        android:title=""
+        android:icon="@drawable/settings"/>
+</menu>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalendarDateTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_blue</item> <!-- Replace with your desired color -->
+        <item name="android:textSize">14sp</item> <!-- Optional: Adjust text size if needed -->
+    </style>
+
+    <!-- Style for Header (Month/Year) Text -->
+    <style name="CalendarHeaderStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/orange</item> <!-- Custom header color -->
+        <item name="android:textSize">18sp</item> <!-- Optional: change text size -->
+    </style>
+
+    <!-- Style for Weekday (Sun, Mon, etc.) Text -->
+    <style name="WeekdayTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item> <!-- Custom weekday color -->
+        <item name="android:textSize">16sp</item> <!-- Optional: change text size -->
+    </style>
+
+
+</resources>

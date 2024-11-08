@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".signup_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+<View
+    android:layout_width="wrap_content"
+    android:layout_height="80dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Create Account Now"
+            android:textAlignment="viewStart"
+            android:textColor="@color/orange"
+            android:textSize="23dp"
+            android:textStyle="italic" />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:text="Full Name"
+        android:textColor="@color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:inputType="text"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:text="Email or Phone No"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:inputType="text"
+           android:textColor="@color/white" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:text="User Name"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:inputType="text"
+            android:textColorHighlight="@color/white" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:text="Password"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/eye_password_see_view_svgrepo_com"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:text="Verify Password"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/eye_password_see_view_svgrepo_com"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/SignUp_btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="SignUp"
+                android:textSize="20sp"
+                app:backgroundTint="#EC6738" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="15dp" />
+
+            <TextView
+                android:id="@+id/login_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already Have an  Account ?"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
